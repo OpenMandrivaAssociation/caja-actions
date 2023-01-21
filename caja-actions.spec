@@ -10,10 +10,12 @@ Release:	1
 Group:		Graphical desktop/Other
 License:	GPLv2+ and LGPLv2+
 Url:		https://www.mate-desktop.org/
-Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://pub.mate-desktop.org/releases/1.26/%{name}-%{version}.tar.xz
 
 BuildRequires:	mate-common
 BuildRequires:	itstool
+BuildRequires:	dblatex
+BuildRequires:	docbook-utils
 BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)

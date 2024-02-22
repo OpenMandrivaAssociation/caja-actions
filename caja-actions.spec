@@ -1,16 +1,16 @@
-%define url_ver	%(echo %{version}|cut -d. -f1,2)
+%define mate_ver	%(echo %{version}|cut -d. -f1,2)
 
 %define libname %mklibname %{name}-extension
-%define devname %mklibname -d %{name}-extension
+%define devname %mklibname %{name}-extension -d
 
 Summary:	Caja extension for customizing the context menu
 Name:		caja-actions
-Version:	1.26.0
+Version:	1.28.0
 Release:	1
 Group:		Graphical desktop/Other
 License:	GPLv2+ and LGPLv2+
 Url:		https://www.mate-desktop.org/
-Source0:	https://pub.mate-desktop.org/releases/1.26/%{name}-%{version}.tar.xz
+Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	mate-common
 BuildRequires:	itstool
